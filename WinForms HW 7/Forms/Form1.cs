@@ -62,7 +62,7 @@ namespace WinForms_HW_7
 
             currentPlayers = FakeData
                 .FakePlayers[Enums.Position.GK.ToString()]
-                .OrderBy(p => new Guid())
+                .OrderBy(p => Random.Shared.Next())
                 .ToList();
             PlayerPanels[selectedIndex++].AdjustData(currentPlayers[0]);
             
@@ -71,7 +71,7 @@ namespace WinForms_HW_7
 
             currentPlayers = FakeData
                 .FakePlayers[Enums.Position.DD.ToString()]
-                .OrderBy(p => new Guid())
+                .OrderBy(p => Random.Shared.Next())
                 .ToList();
 
             for (int i = 0; i < tacticFormat[0]; i++)
@@ -80,7 +80,7 @@ namespace WinForms_HW_7
 
             currentPlayers = FakeData
                 .FakePlayers[Enums.Position.MD.ToString()]
-                .OrderBy(p => new Guid())
+                .OrderBy(p => Random.Shared.Next())
                 .ToList();
 
             for (int i = 0; i < tacticFormat[1]; i++)
@@ -89,7 +89,7 @@ namespace WinForms_HW_7
             
             currentPlayers = FakeData
                 .FakePlayers[Enums.Position.F.ToString()]
-                .OrderBy(p => new Guid())
+                .OrderBy(p => Random.Shared.Next())
                 .ToList();
 
             for (int i = 0; i < tacticFormat[2]; i++)
